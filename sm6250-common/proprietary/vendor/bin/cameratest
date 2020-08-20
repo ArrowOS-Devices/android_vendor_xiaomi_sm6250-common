@@ -1,0 +1,112 @@
+#!/system/bin/sh
+
+if [ ! -d "/mnt/sdcard/cameratest/" ];then
+  mkdir /mnt/sdcard/cameratest/
+else
+  rm -rf /mnt/sdcard/cameratest/*
+fi
+
+#send wakeup key to turn screen on
+input keyevent KEYCODE_WAKEUP
+
+#swipe to unlock
+input swipe 400 400 400 0
+camera_id=-1
+camera_format=-1
+remosic_type=2
+camera_aec=0xff
+filename_contain_resolution=0
+
+
+#tips
+tips( )
+{
+    echo "cameratest -n CAMERAID -f FORMAT  [-r REMOSIC] [-a AEC_LEVEL] [-x]"
+    echo "                              "
+    echo "tips:"
+    echo "-n cameraId
+            0 back-main-camera
+            1 front-main-camera
+            20 back-tele-camera
+            21 back-ultra-camera
+            40 front-aux-camera"
+
+    echo "-f FORMAT
+            0 jpg
+            1 yuv
+            2 raw(mipi10)
+            3 raw(unpack10) note: only used in software remosaic"
+
+    echo "-a AEC_LEVEL"
+
+    echo "-r REMOSAIC
+            0 full size
+            1 Binning size
+            2 disable(default)"
+
+    echo "-x filename contains resolution"
+    echo "                              "
+    echo "output:/mnt/sdcard/cameratest/cameraId_FORMAT_REMOSAIC.format"
+    echo "                              "
+}
+
+#deal input parameters
+while getopts n:f:r:a:x OPT
+do
+    case $OPT in
+        n)
+            camera_id=$OPTARG;;
+        f)
+            camera_format=$OPTARG;;
+        r)
+            remosic_type=$OPTARG;;
+        a)
+            camera_aec=$OPTARG;;
+        x)
+            filename_contain_resolution=1;;
+        ?)
+            tips
+            exit 1;;
+    esac
+done
+
+#check parameters
+if [ $camera_id = -1 ]; then
+    tips
+    exit 1
+fi;
+
+if [ $camera_format = -1 ]; then
+    tips
+    exit 1
+fi;
+
+#echo "$camera_id $camera_format  $remosic_type $camera_aec"
+#kill old app
+pm clear com.xiaomi.cameratest
+
+am start -n com.xiaomi.cameratest/com.xiaomi.cameratest.CameraTestActivity --es camera "$camera_id" \
+                                                                  --ei testType $camera_format \
+                                                                  --ei showResolution $filename_contain_resolution \
+                                                                  --ei remosicType $remosic_type \
+                                                                  --ei aec $camera_aec
+#temporary sleep 30s to make sure image output done.
+for i in `seq 1 100`
+do
+    sleep 0.3
+    if [ -a /mnt/sdcard/cameratest/*.* ]
+    then
+        image=`ls /mnt/sdcard/cameratest/*.*`
+        size1=`stat -c "%s" ${image}`
+        #echo loop $i start size: ${size1}
+        sleep 0.1
+        size2=`stat -c "%s" ${image}`
+        #echo loop $i end size: ${size2}
+        if [ "$size1" = "$size2" ];then
+            echo Captured ${image}
+            break
+        fi
+    fi
+done
+
+#end

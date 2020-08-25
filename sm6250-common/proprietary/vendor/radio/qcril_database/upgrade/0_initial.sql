@@ -175,6 +175,7 @@ INSERT INTO "qcril_emergency_source_mcc_table" VALUES('208','18','','');
 INSERT INTO "qcril_emergency_source_mcc_table" VALUES('208','08','','');
 INSERT INTO "qcril_emergency_source_mcc_table" VALUES('272','999','','');
 INSERT INTO "qcril_emergency_source_mcc_table" VALUES('272','1913','','');
+INSERT INTO "qcril_emergency_source_mcc_table" VALUES('724','190','','');
 CREATE TABLE qcril_emergency_source_voice_table(MCC TEXT, NUMBER TEXT, IMS_ADDRESS TEXT, SERVICE TEXT, PRIMARY KEY(MCC,NUMBER));
 INSERT INTO "qcril_emergency_source_voice_table" VALUES('425','100','','full');
 INSERT INTO "qcril_emergency_source_voice_table" VALUES('425','101','','full');

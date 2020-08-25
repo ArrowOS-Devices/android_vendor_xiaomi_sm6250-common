@@ -418,10 +418,8 @@
     <string-array name="support_face_unlock_region_global">
         <item>ALL</item>
     </string-array>
-    <!--These region support face unlock-->
-    <string-array name="support_face_unlock_region_dom">
-        <item>CN</item>
-    </string-array>
+    <!-- whether support multi face input -->
+    <bool name="support_multi_face_input_global">true</bool>
     <!-- whether support ifaa 2dfa feature -->
     <integer name="ifaa_2dfa_support">0</integer>
     <!-- whether support dc backlight -->
@@ -436,4 +434,6 @@
     <float name="device_head_sar">0.898</float>
     <!-- device body sar value -->
     <float name="device_body_sar">0.483</float>
+    <!-- Whether support sunlight mode -->
+    <bool name="config_sunlight_mode_available">true</bool>
 </features>

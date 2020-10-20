@@ -199,3 +199,26 @@ dex_import {
 	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
+prebuilt_etc_xml {
+      name: "compatibility_matrix",
+      owner: "xiaomi",
+      src: "proprietary/vendor/etc/vintf/compatibility_matrix.xml", 
+      sub_dir: "vintf",
+      soc_specific: true,
+}
+
+prebuilt_etc_xml {
+      name: "android.hardware.gnss@2.0-service-qti",
+      owner: "xiaomi",
+      src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml", 
+      sub_dir: "vintf/manifest",
+      soc_specific: true,
+}
+
+prebuilt_etc_xml {
+      name: "vendor.qti.gnss@3.0-service", 
+      owner: "xiaomi",
+      src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml", 
+      sub_dir: "vintf/manifest",
+      soc_specific: true,
+}

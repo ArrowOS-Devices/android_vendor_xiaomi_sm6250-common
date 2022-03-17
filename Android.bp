@@ -195,6 +195,24 @@ android_app_import {
 	system_ext_specific: true,
 }
 
+android_app_import {
+        name: "WfdService",
+        owner: "xiaomi",
+        apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+        dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+        system_ext_specific: true,
+}
+
+dex_import {
+        name: "WfdCommon",
+        owner: "xiaomi",
+        jars: ["proprietary/framework/WfdCommon.jar"],
+}
+
 prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.1-service-qti",
 	owner: "xiaomi",

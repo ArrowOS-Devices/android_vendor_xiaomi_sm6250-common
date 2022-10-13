@@ -406,8 +406,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libFileMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFileMux_proprietary.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
-    vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel.so \
-    vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel_svc.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libMpeg4SwEncoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMpeg4SwEncoder.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAacDec.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDec.so \
@@ -422,7 +420,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libOmxVideoDSMode.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVideoDSMode.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
-    vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVkLayer_q3dtools.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
@@ -448,7 +445,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
-    vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdataitems.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
@@ -456,8 +452,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpmqmihal.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libdpps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpps.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
-    vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmfs.so \
-    vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmtime.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
@@ -494,8 +488,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_wifihal.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
-    vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminkdescriptor.so \
-    vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminksocket.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libmmrtpdecoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder_proprietary.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libmmrtpencoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder_proprietary.so \
@@ -506,8 +498,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libnetmgr_rmnet_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_rmnet_ext.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnlnetmgr.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnpu.so \
-    vendor/xiaomi/sm6250-common/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
-    vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib/libops.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdnotifier.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
@@ -522,7 +512,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrildatactl.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
-    vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqisl.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
@@ -550,7 +539,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-radioconfig.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/librilqmiservices.so \
-    vendor/xiaomi/sm6250-common/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-colormgr-algo.so \
@@ -559,7 +547,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmextension.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsettings.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libskewknob.so:$(TARGET_COPY_OUT_VENDOR)/lib/libskewknob.so \
-    vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libstagefright_soft_qtiflacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_qtiflacdec.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
@@ -569,7 +556,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libthermalfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalfeature.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
-    vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrustedapploader.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtadapter.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrild_librilutils.so \
     vendor/xiaomi/sm6250-common/proprietary/vendor/lib/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib/qtibus.so \
